@@ -1,467 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Next-generation AI and Web3 platform combining predictive analytics with blockchain security">
-    <meta name="keywords" content="AI, Web3, blockchain, predictive analytics, smart contracts">
-    <title>NexusAI | AI x Web3 Platform</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'neon-purple': '#6f26d2',
-                        'neon-green': '#64ffda',
-                        'neon-blue': '#4a90e2',
-                    },
-                    animation: {
-                        'fade-in': 'fadeIn 1s ease-in-out',
-                        'float': 'float 3s ease-in-out infinite',
-                    },
-                    keyframes: {
-                        fadeIn: {
-                            '0%': { opacity: '0' },
-                            '100%': { opacity: '1' },
-                        },
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-10px)' },
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #0f172a;
-            color: #e2e8f0;
-        }
-        .hero-gradient {
-            background: linear-gradient(135deg, rgba(111,38,210,0.2) 0%, rgba(0,0,0,0.8) 100%);
-        }
-        .neon-shadow {
-            text-shadow: 0 0 10px rgba(111,38,210,0.7), 0 0 20px rgba(111,38,210,0.5);
-        }
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(111,38,210,0.3);
-        }
-        .testimonial-slider {
-            animation: scroll 20s linear infinite;
-        }
-        @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-    </style>
-    <link rel="stylesheet" href="style1.css">
-
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="fixed w-full bg-gray-900/80 backdrop-blur-md z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0">
-                        <span class="text-2xl font-bold text-neon-purple">Nexus<span class="text-neon-green">AI</span></span>
-                    </div>
-                </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#features" class="text-gray-300 hover:text-neon-purple px-3 py-2 rounded-md text-sm font-medium">Features</a>
-                        <a href="#web3" class="text-gray-300 hover:text-neon-purple px-3 py-2 rounded-md text-sm font-medium">Web3</a>
-                        <a href="#dashboard" class="text-gray-300 hover:text-neon-purple px-3 py-2 rounded-md text-sm font-medium">Dashboard</a>
-                        <a href="#use-cases" class="text-gray-300 hover:text-neon-purple px-3 py-2 rounded-md text-sm font-medium">Use Cases</a>
-                        <a href="#contact" class="text-gray-300 hover:text-neon-purple px-3 py-2 rounded-md text-sm font-medium">Contact</a>
-                    </div>
-                </div>
-                <div class="hidden md:block">
-                    <button class="bg-neon-purple hover:bg-purple-700 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300">
-                        Connect Wallet
-                    </button>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="topbaner">
+        <div id="ltb">
+          <h3>Call us : 8863156441</h3>
+          <h3>Email : lagendryVideo@gmail.com</h3>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
-        <div class="absolute inset-0 bg-[url('https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center opacity-20"></div>
-        <div class="absolute inset-0 hero-gradient"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center animate-fade-in">
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 neon-shadow">
-                Next-Gen <span class="text-neon-purple">AI</span> x <span class="text-neon-blue">Web3</span> Platform
-            </h1>
-            <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto">
-                Leverage predictive analytics powered by AI with the security and transparency of blockchain technology
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <button class="bg-neon-purple hover:bg-purple-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition duration-300 transform hover:scale-105">
-                    Explore Features
-                </button>
-                <button class="border-2 border-neon-green text-neon-green hover:bg-neon-green/10 px-8 py-4 rounded-lg text-lg font-semibold transition duration-300 transform hover:scale-105">
-                    Live Demo
-                </button>
-            </div>
+        <div id="rtb">
+          <i class="ri-facebook-fill"></i>
+          <i class="ri-twitter-x-line"></i>
+          <i class="ri-linkedin-fill"></i>
+          <i class="ri-youtube-line"></i>
         </div>
-    </section>
-
-    <!-- AI Features Section -->
-    <section id="features" class="py-20 bg-gray-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">AI-Powered <span class="text-neon-purple">Features</span></h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">Our platform harnesses cutting-edge artificial intelligence to deliver unparalleled insights</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Feature 1 -->
-                <div class="bg-gray-800 p-8 rounded-xl card-hover">
-                    <div class="text-neon-purple text-4xl mb-4">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Prediction Models</h3>
-                    <p class="text-gray-400">Real-time data analysis with ML-driven forecasts and trend predictions.</p>
-                </div>
-                <!-- Feature 2 -->
-                <div class="bg-gray-800 p-8 rounded-xl card-hover">
-                    <div class="text-neon-green text-4xl mb-4">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Smart Chatbots</h3>
-                    <p class="text-gray-400">Natural language processing for intelligent customer interactions.</p>
-                </div>
-                <!-- Feature 3 -->
-                <div class="bg-gray-800 p-8 rounded-xl card-hover">
-                    <div class="text-neon-blue text-4xl mb-4">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Auto-Analytics</h3>
-                    <p class="text-gray-400">Automated data processing with actionable business insights.</p>
-                </div>
-                <!-- Feature 4 -->
-                <div class="bg-gray-800 p-8 rounded-xl card-hover">
-                    <div class="text-neon-purple text-4xl mb-4">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Fraud Detection</h3>
-                    <p class="text-gray-400">AI-powered anomaly detection for secure transactions.</p>
-                </div>
-            </div>
+      </div>
+      <div id="nav">
+        <div id="nav-part1">
+          <i class="ri-apps-2-line"></i>
+          <i class="ri-bubble-chart-fill"></i>
         </div>
-    </section>
-
-    <!-- Web3 Integration Section -->
-    <section id="web3" class="py-20 bg-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Seamless <span class="text-neon-blue">Web3</span> Integration</h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">Built on blockchain technology for transparency and security</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Web3 Feature 1 -->
-                <div class="bg-gray-900 p-8 rounded-xl card-hover">
-                    <div class="flex items-center justify-center mb-4">
-                        <img src="https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Wallet Connect" class="h-16 w-16 object-contain">
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 text-center">Wallet Connect</h3>
-                    <p class="text-gray-400 text-center">Seamless integration with 20+ blockchain wallets including MetaMask and WalletConnect.</p>
-                </div>
-                <!-- Web3 Feature 2 -->
-                <div class="bg-gray-900 p-8 rounded-xl card-hover">
-                    <div class="flex items-center justify-center mb-4">
-                        <img src="https://images.pexels.com/photos/730564/pexels-photo-730564.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Smart Contracts" class="h-16 w-16 object-contain">
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 text-center">Smart Contracts</h3>
-                    <p class="text-gray-400 text-center">Automate business logic with tamper-proof smart contract execution.</p>
-                </div>
-                <!-- Web3 Feature 3 -->
-                <div class="bg-gray-900 p-8 rounded-xl card-hover">
-                    <div class="flex items-center justify-center mb-4">
-                        <img src="https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="DAO Governance" class="h-16 w-16 object-contain">
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 text-center">DAO Governance</h3>
-                    <p class="text-gray-400 text-center">Decentralized decision making with community voting and proposals.</p>
-                </div>
-            </div>
+        <div id="nav-part2">
+          <a href="#">Home <i class="ri-arrow-down-s-line"></i></a>
+          <a href="#">Pages <i class="ri-arrow-down-s-line"></i></a>
+          <a href="#">Services <i class="ri-arrow-down-s-line"></i></a>
+          <a href="#">Shop <i class="ri-arrow-down-s-line"></i></a>
+          <a href="#">Blog <i class="ri-arrow-down-s-line"></i></a>
+          <button>contacts</button>
         </div>
-    </section>
-
-    <!-- Dashboard Preview Section -->
-    <section id="dashboard" class="py-20 bg-gray-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Real-Time <span class="text-neon-green">Dashboard</span></h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">Interactive analytics at your fingertips</p>
-            </div>
-            <div class="bg-gray-800 rounded-xl p-8 mb-8">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div>
-                        <h3 class="text-xl font-bold mb-4">Data Analytics</h3>
-                        <div class="bg-gray-700 rounded-lg p-4 h-64 flex items-center justify-center">
-                            <div class="w-full">
-                                <div class="flex justify-between mb-2">
-                                    <span>Jan</span>
-                                    <span>Feb</span>
-                                    <span>Mar</span>
-                                    <span>Apr</span>
-                                    <span>May</span>
-                                </div>
-                                <div class="flex items-end h-40 gap-2">
-                                    <div class="w-full bg-neon-purple rounded-t-sm" style="height: 30%"></div>
-                                    <div class="w-full bg-neon-purple rounded-t-sm" style="height: 50%"></div>
-                                    <div class="w-full bg-neon-purple rounded-t-sm" style="height: 70%"></div>
-                                    <div class="w-full bg-neon-purple rounded-t-sm" style="height: 90%"></div>
-                                    <div class="w-full bg-neon-purple rounded-t-sm" style="height: 60%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-4">AI Predictions</h3>
-                        <div class="bg-gray-700 rounded-lg p-4 h-64 flex items-center justify-center">
-                            <div class="w-full">
-                                <div class="flex justify-between mb-2">
-                                    <span>Q1</span>
-                                    <span>Q2</span>
-                                    <span>Q3</span>
-                                    <span>Q4</span>
-                                </div>
-                                <div class="flex items-end h-40 gap-4">
-                                    <div class="w-full bg-neon-green rounded-t-sm" style="height: 40%"></div>
-                                    <div class="w-full bg-neon-green rounded-t-sm" style="height: 60%"></div>
-                                    <div class="w-full bg-neon-green rounded-t-sm" style="height: 80%"></div>
-                                    <div class="w-full bg-neon-green rounded-t-sm" style="height: 50%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center">
-                <a href="dashboard.html" class="inline-block bg-neon-purple hover:bg-purple-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition duration-300 transform hover:scale-105">
-                    Explore Full Dashboard
-                </a>
-            </div>
+        <div id="nav-part3">
+          <i class="ri-search-line"></i>
+          <button>Get in Touch</button>
         </div>
-    </section>
+      </div>
 
-    <!-- Use Cases Section -->
-    <section id="use-cases" class="py-20 bg-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Industry <span class="text-neon-blue">Use Cases</span></h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">Transforming businesses across multiple sectors</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Use Case 1 -->
-                <div class="bg-gray-900 rounded-xl p-6 card-hover">
-                    <div class="text-neon-purple text-3xl mb-4">
-                        <i class="fas fa-hospital"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Healthcare</h3>
-                    <p class="text-gray-400">Predictive diagnostics and patient data management on blockchain.</p>
-                </div>
-                <!-- Use Case 2 -->
-                <div class="bg-gray-900 rounded-xl p-6 card-hover">
-                    <div class="text-neon-green text-3xl mb-4">
-                        <i class="fas fa-coins"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Finance</h3>
-                    <p class="text-gray-400">Fraud detection and algorithmic trading with smart contracts.</p>
-                </div>
-                <!-- Use Case 3 -->
-                <div class="bg-gray-900 rounded-xl p-6 card-hover">
-                    <div class="text-neon-blue text-3xl mb-4">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Education</h3>
-                    <p class="text-gray-400">Personalized learning paths and credential verification.</p>
-                </div>
-                <!-- Use Case 4 -->
-                <div class="bg-gray-900 rounded-xl p-6 card-hover">
-                    <div class="text-neon-purple text-3xl mb-4">
-                        <i class="fas fa-truck"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Logistics</h3>
-                    <p class="text-gray-400">Supply chain optimization and transparent tracking.</p>
-                </div>
-            </div>
+      <div id="banner">
+        <!-- <img src="/" alt=""> -->
+        <h1>Contacts</h1>
+        <h2>Contacts</h2>
+        <div class="chota">
+          <h5>Home Contacts</h5>
         </div>
-    </section>
+      </div>
 
-    <!-- Testimonials Section -->
-    <section class="py-20 bg-gray-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">What Our <span class="text-neon-green">Clients</span> Say</h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">Trusted by innovative companies worldwide</p>
+      <div id="datafrom">
+        <div class="f-left data">
+          <h3>/ get in touch /</h3>
+          <h1>We are always ready to help you and answer your questions</h1>
+          <p>
+            Necessitatibus similique deserunt nam, libero doloremque assumenda
+            optio nostrum exercitationem cum rerum?
+          </p>
+          <div class="info">
+            <div class="inforight">
+              <h3>Call Center</h3>
+              <h5>465464646465 <br />+{123}123-456-799</h5>
+              <br />
+              <h3>Email</h3>
+              <h5>lagendryVideo@gmail.com</h5>
             </div>
-            <div class="relative overflow-hidden">
-                <div class="flex testimonial-slider w-[200%]">
-                    <!-- Testimonial 1 -->
-                    <div class="w-1/2 px-4">
-                        <div class="bg-gray-800 p-8 rounded-xl">
-                            <div class="flex items-center mb-4">
-                                <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="User Avatar" class="w-12 h-12 rounded-full object-cover mr-4">
-                                <div>
-                                    <h4 class="font-bold">Sarah Johnson</h4>
-                                    <p class="text-gray-400 text-sm">CEO, Tech Innovations</p>
-                                </div>
-                            </div>
-                            <p class="text-gray-300">"NexusAI has revolutionized our data analytics pipeline. The AI predictions are incredibly accurate and the blockchain integration gives us peace of mind for security."</p>
-                        </div>
-                    </div>
-                    <!-- Testimonial 2 -->
-                    <div class="w-1/2 px-4">
-                        <div class="bg-gray-800 p-8 rounded-xl">
-                            <div class="flex items-center mb-4">
-                                <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="User Avatar" class="w-12 h-12 rounded-full object-cover mr-4">
-                                <div>
-                                    <h4 class="font-bold">Michael Chen</h4>
-                                    <p class="text-gray-400 text-sm">CTO, Blockchain Solutions</p>
-                                </div>
-                            </div>
-                            <p class="text-gray-300">"The seamless integration between AI and Web3 is game-changing. Our smart contracts now have predictive capabilities we never thought possible."</p>
-                        </div>
-                    </div>
-                    <!-- Testimonial 3 -->
-                    <div class="w-1/2 px-4">
-                        <div class="bg-gray-800 p-8 rounded-xl">
-                            <div class="flex items-center mb-4">
-                                <img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="User Avatar" class="w-12 h-12 rounded-full object-cover mr-4">
-                                <div>
-                                    <h4 class="font-bold">David Martinez</h4>
-                                    <p class="text-gray-400 text-sm">Head of Data, FinTech Corp</p>
-                                </div>
-                            </div>
-                            <p class="text-gray-300">"The dashboard provides real-time insights that have helped us reduce fraud by 40%. The combination of AI and blockchain is exactly what our industry needed."</p>
-                        </div>
-                    </div>
-                    <!-- Testimonial 4 -->
-                    <div class="w-1/2 px-4">
-                        <div class="bg-gray-800 p-8 rounded-xl">
-                            <div class="flex items-center mb-4">
-                                <img src="https://images.pexels.com/photos/3777943/pexels-photo-3777943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="User Avatar" class="w-12 h-12 rounded-full object-cover mr-4">
-                                <div>
-                                    <h4 class="font-bold">Emily Wilson</h4>
-                                    <p class="text-gray-400 text-sm">Product Manager, HealthTech</p>
-                                </div>
-                            </div>
-                            <p class="text-gray-300">"Implementing NexusAI's predictive models has transformed our patient care strategies. The accuracy and explainability of their AI is unmatched."</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="infoleft">
+              <h3>Our Location</h3>
+              <h5>USA ,NEW YOURK-10632</h5>
+              <br />
+              <h3>Social Network</h3>
+              <i class="ri-facebook-fill"></i>
+              <i class="ri-twitter-x-line"></i>
+              <i class="ri-linkedin-fill"></i>
+              <i class="ri-youtube-line"></i>
             </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Newsletter & Contact Section -->
-    <section id="contact" class="py-20 bg-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <!-- Newsletter -->
-                <div>
-                    <h2 class="text-3xl font-bold mb-6">Stay <span class="text-neon-purple">Updated</span></h2>
-                    <p class="text-gray-400 mb-6">Subscribe to our newsletter for the latest updates and features</p>
-                    <form class="space-y-4">
-                        <div>
-                            <input type="email" placeholder="Your email address" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-neon-purple">
-                        </div>
-                        <button type="submit" class="bg-neon-purple hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300">
-                            Subscribe
-                        </button>
-                    </form>
-                </div>
-                <!-- Contact Form -->
-                <div>
-                    <h2 class="text-3xl font-bold mb-6">Get in <span class="text-neon-green">Touch</span></h2>
-                    <form class="space-y-4">
-                        <div>
-                            <input type="text" placeholder="Your name" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-neon-purple">
-                        </div>
-                        <div>
-                            <input type="email" placeholder="Your email" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-neon-purple">
-                        </div>
-                        <div>
-                            <textarea placeholder="Your message" rows="4" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-neon-purple"></textarea>
-                        </div>
-                        <button type="submit" class="bg-neon-green hover:bg-teal-500 text-gray-900 px-6 py-3 rounded-lg font-medium transition duration-300">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
+        <div class="f-right data">
+          <form action="">
+            <div class="form-title">
+              <h1>Get in Touch</h1>
+              <p>
+                Depend ypur goals and identity areas wheres All add <br />
+                Value to Business
+              </p>
             </div>
+            <input type="text" placeholder="Full Name : " />
+            <input type="text" placeholder="Email : " />
+            <input type="text" placeholder="Subject: " />
+            <textarea placeholder="Message"></textarea>
+            <button id="sub">
+              <i class="ri-arrow-right-s-line"></i> Send a message
+            </button>
+          </form>
         </div>
-    </section>
+      </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <span class="text-2xl font-bold text-neon-purple">Nexus<span class="text-neon-green">AI</span></span>
-                    <p class="text-gray-400 mt-2">The future of AI and Web3 integration</p>
-                </div>
-                <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover:text-neon-purple transition duration-300">
-                        <i class="fab fa-twitter text-xl"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-neon-purple transition duration-300">
-                        <i class="fab fa-discord text-xl"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-neon-purple transition duration-300">
-                        <i class="fab fa-github text-xl"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-neon-purple transition duration-300">
-                        <i class="fab fa-telegram text-xl"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 NexusAI. All rights reserved.</p>
-                <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover:text-neon-purple text-sm transition duration-300">Privacy Policy</a>
-                    <a href="#" class="text-gray-400 hover:text-neon-purple text-sm transition duration-300">Terms of Service</a>
-                    <a href="#" class="text-gray-400 hover:text-neon-purple text-sm transition duration-300">Contact Us</a>
-                </div>
-            </div>
+      <div id="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d75191759.24204904!2d53.5761167!3d14.1354104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1713777478662!5m2!1sen!2sin"
+          width="100%"
+          height="500"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+      <div id="footer">
+        <div class="footer-part1">
+          <i class="ri-bubble-chart-fill"></i>
+          <h1>
+            It's blow your mind! <br />
+            Meet Neural Networks
+          </h1>
         </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script>
-        // Simple form validation
-        document.querySelectorAll('form').forEach(form => {
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-                alert('Thank you for your submission!');
-                form.reset();
-            });
-        });
-
-        // Scroll animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-fade-in');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('section').forEach(section => {
-            observer.observe(section);
-        });
-    </script>
-    <script src="script1.js"></script>
-</body>
+        <div class="footer-part2">
+          <div class="fp21 part">
+            <h3>Company</h3>
+            <a href="#">About</a>
+            <a href="#">Enterprise</a>
+            <a href="#">Sustainability</a>
+            <a href="#">News & Media</a>
+            <a href="#">/Contacts/</a>
+          </div>
+          <div class="fp22 part">
+            <h3>Services</h3>
+            <a href="#">Deep learning solutions</a>
+            <a href="#">Development</a>
+            <a href="#">Model Education</a>
+            <a href="#">Data Science content    </a>
+            <a href="#">Good Education</a>
+          </div>
+        </div>
+        <!-- <div class="f-bootom">
+        <h1>WWw.DownloadNewThemes.com</h1>
+        </div> -->
+      </div>
+    </div>
+  </body>
 </html>
